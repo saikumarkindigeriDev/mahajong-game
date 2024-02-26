@@ -76,8 +76,8 @@ const Game=()=>{
             }
            
         }else{
-            items[current].stat = "wrong"
-            items[prev].stat = "wrong"
+            items[current].status = "wrong"
+            items[prev].status = "wrong"
             setItems([...items])
             setTimeout(() => {
                 items[current].status = ""
@@ -116,7 +116,7 @@ gameFinished?(
     <h2 className='score'>Score : {score}</h2>
       <p>Time Taken: {fsormatTime(initialTime-seconds)}</p>
     </div>
-      
+      stat
     </div>
   ):(
     <div className='main-con'> 
