@@ -30,7 +30,7 @@ const Game=()=>{
 
     const [prev, setPrev] = useState(-1) 
     const [score,setScore]=useState(0)
-    const initialTime = 10*60; 
+    const initialTime = 2; 
     const [seconds, setSeconds] = useState(initialTime); 
     const [gameFinished, setGameFinished] = useState(false);
 
@@ -109,14 +109,14 @@ const name=localStorage.getItem('name')
         <div className='whole-con'>
 {
 gameFinished?(
-    <div className='result'>
+   
         
-    <div className='result-con'>
-    <h2>Game Finished!</h2>
+  <div className='result-con'>
+    <h2 className='game-finished' >Game Finished!</h2>
     <h2 className='score'>Score : {score}</h2>
-      <p>Time Taken: {fsormatTime(initialTime-seconds)}</p>
-    </div>
-      stat
+      <p >Time Taken: {fsormatTime(initialTime-seconds)}</p>
+    
+   
     </div>
   ):(
     <div className='main-con'> 
