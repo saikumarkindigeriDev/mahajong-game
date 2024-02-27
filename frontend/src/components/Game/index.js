@@ -30,7 +30,7 @@ const Game=()=>{
 
     const [prev, setPrev] = useState(-1) 
     const [score,setScore]=useState(0)
-    const initialTime = 2; 
+    const initialTime = 10*60; 
     const [seconds, setSeconds] = useState(initialTime); 
     const [gameFinished, setGameFinished] = useState(false);
 
